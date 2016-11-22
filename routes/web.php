@@ -25,8 +25,6 @@ Route::group(['prefix' => 'codility', 'middleware' => 'auth' ], function () {
     Route::get('permmissingelem', 'codilityController@permMissingElem');
 });
 
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
